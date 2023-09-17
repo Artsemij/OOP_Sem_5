@@ -81,7 +81,7 @@ try {
 result = operand1.divide(operand2);
 view.displayResult(result);
 } catch (ArithmeticException e) {
-view.displayErrorMessage("Деление на ноль невозможно");
+view.displayErrorMessage("Division by zero is impossible.");
 }
 }
 }

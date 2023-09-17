@@ -8,33 +8,33 @@ scanner = new Scanner(System.in);
 }
 
 public void displayMenu() {
-System.out.println("=== Калькулятор комплексных чисел ===");
-System.out.println("Выберите операцию:");
-System.out.println("1. Сложение");
-System.out.println("2. Вычитание");
-System.out.println("3. Умножение");
-System.out.println("4. Деление");
-System.out.println("0. Выйти");
+System.out.println("=== Hi! I'm complex number calculator! ===");
+System.out.println("Select an action:");
+System.out.println("1. Addition");
+System.out.println("2. Subtraction");
+System.out.println("3. Multiplication");
+System.out.println("4. Division");
+System.out.println("0. Cancel");
 }
 
 public int getOperationChoice() {
-System.out.print("Ваш выбор: ");
+System.out.print("Your choice: ");
 return scanner.nextInt();
 }
 
 public ComplexNumber readComplexNumber() {
-System.out.print("Действительная часть: ");
+System.out.print("Real part: ");
 double real = scanner.nextDouble();
-System.out.print("Мнимая часть: ");
+System.out.print("Imaginary part: ");
 double imaginary = scanner.nextDouble();
 return new ComplexNumber(real, imaginary);
 }
 
 public void displayResult(ComplexNumber result) {
-System.out.println("Результат: " + result);
+System.out.println("Result: " + result);
 }
 
 public void displayErrorMessage(String message) {
-System.out.println("Ошибка: " + message);
+System.out.println("Error: " + message);
 }
 }
